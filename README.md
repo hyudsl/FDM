@@ -78,7 +78,7 @@ model:
     ...
 ```
 
-Run the command to training feature sampler (Transformer)
+Run command to training feature sampler (Transformer)
 ```
 # python train_net.py --config_file path/to/feature_sampler/config --output path/to/save
 
@@ -99,7 +99,7 @@ model:
     ...
 ```
 
-Run the command to training FDM
+Run command to training FDM
 ```
 # python train_net.py --config_file path/to/fdm/config --output path/to/save
 
@@ -120,7 +120,7 @@ model:
     ...
 ```
 
-Run the command to training FDM
+Run command to training FDM and decoder
 ```
 # python train_net.py --config_file path/to/fdm_tuning/config --output path/to/save
 
@@ -156,7 +156,7 @@ dataloader:
     ...
 ```
 
-Set encoder-decoder (+fdm) and feature sampler path in model.yaml
+Set encoder-decoder (+FDM) and feature sampler path in model.yaml
 ```
 # example
 
@@ -169,7 +169,9 @@ model:
     ...
 ```
 
-Run this command to inference
+You can set save path at task_config.yaml
+
+Run command to inference
 ```
 # python inference.py --config path/to/config/root --task task/name
 
