@@ -3,10 +3,11 @@ scikit_image
 opencv_python
 opencv-python-headless
 tqdm
-numpy
+numpy==1.22.0
 matplotlib
 Pillow
 PyYAML
 # scikit-learn
 tensorboard
 mlconfig
+protobuf==3.20.0

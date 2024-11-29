@@ -2,7 +2,7 @@ model:
   target: image_synthesis.modeling.model.inpainting_model.InpaintingModel
   params:
     mode: 'inpainitng'
-    codec_path: ./checkpoint/paris/encoder_decoder.pth
+    codec_path: ./output/experiments/paris/encoder_decoder/checkpoint/last.pth
     content_codec_config:
       target: image_synthesis.modeling.codecs.image_codec.patch_vqgan.PatchVQGAN
       params:
@@ -70,12 +70,12 @@ dataloader:
   train_datasets:
     - target: image_synthesis.data.image_list_dataset_provided_mask.ImageListDataset
       params:
-        name: paris/train
+        name: images/paris/train
         image_end_with: bmp,jpg,jpeg,pgm,png,ppm,tif,tiff,webp,JPEG,JPG
 
         return_data_keys: [image, mask]
 
-        provided_mask_name: irregular-mask
+        provided_mask_name: masks
         use_provided_mask: 0.8
         use_provided_mask_ratio: ['0.2', '0.6']
 
@@ -103,12 +103,12 @@ dataloader:
   validation_datasets:
     - target: image_synthesis.data.image_list_dataset_provided_mask.ImageListDataset
       params:
-        name: paris/val
+        name: images/paris/val
         image_end_with: bmp,jpg,jpeg,pgm,png,ppm,tif,tiff,webp,JPEG,JPG
 
         return_data_keys: [image, mask]
 
-        provided_mask_name: irregular-mask
+        provided_mask_name: masks
         use_provided_mask: 0.8
         use_provided_mask_ratio: ['0.2', '0.6']
 

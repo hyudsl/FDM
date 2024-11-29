@@ -2,7 +2,7 @@ model:
   target: image_synthesis.modeling.model.inpainting_model.InpaintingModel
   params:
     mode: 'inpainitng'
-    codec_path: ./checkpoint/paris/fdm.pth
+    codec_path: ./output/experiments/paris/fdm/checkpoint/last.pth
     content_codec_config:
       target: image_synthesis.modeling.codecs.image_codec.patch_vqgan.PatchVQGAN
       params:
