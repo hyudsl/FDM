@@ -16,9 +16,12 @@ pip install -r requirements.txt
 ```
 
 ## Prepare dataset
-### Places
+Please refer to each link to download the dataset.
+* [Places](http://places2.csail.mit.edu/download.html) \
+We use subset of Places365-Challenge following [PUT](https://github.com/liuqk3/PUT). \
+The list of used images is provided in [data/image_list/naturalscene/image_list.txt](https://github.com/hyudsl/FDM/blob/main/data/image_list/naturalscene/image_list.txt)
 
-### Paris Street View
+* [Paris Street View](https://github.com/pathak22/context-encoder)
 
 ## Training
 
