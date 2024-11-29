@@ -107,7 +107,7 @@ Run the command to training FDM
 python train_net.py --config_file ./configs/paris/fdm.yaml --output ./output/experiments/paris
 ```
 
-### Phase 3: Jointly fine-tuning FDM and the decoder.
+### Phase 3: Jointly fine-tuning FDM and the decoder
 Set encoder-decoder path in config file
 ```
 # example
