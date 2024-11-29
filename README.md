@@ -53,9 +53,10 @@ dataloader:
 <!-- Training encoder-decoder using the following command. -->
 Run the command to training encoder-decoder
 ```
-# python train_net.py --config_file path/to/encoder_decoder/config --output path/to/save
-
-# example
+python train_net.py --config_file path/to/encoder_decoder/config --output path/to/save
+```
+example
+```
 python train_net.py --config_file ./configs/paris/encoder_decoder.yaml --output ./output/experiments/paris
 ```
 <!-- <details>
@@ -80,9 +81,10 @@ model:
 
 Run command to training feature sampler (Transformer)
 ```
-# python train_net.py --config_file path/to/feature_sampler/config --output path/to/save
-
-# example
+python train_net.py --config_file path/to/feature_sampler/config --output path/to/save
+```
+example
+```
 python train_net.py --config_file ./configs/paris/transformer.yaml --output ./output/experiments/paris
 ```
 
@@ -101,9 +103,10 @@ model:
 
 Run command to training FDM
 ```
-# python train_net.py --config_file path/to/fdm/config --output path/to/save
-
-# example
+python train_net.py --config_file path/to/fdm/config --output path/to/save
+```
+example
+```
 python train_net.py --config_file ./configs/paris/fdm.yaml --output ./output/experiments/paris
 ```
 
@@ -122,9 +125,10 @@ model:
 
 Run command to training FDM and decoder
 ```
-# python train_net.py --config_file path/to/fdm_tuning/config --output path/to/save
-
-# example
+python train_net.py --config_file path/to/fdm_tuning/config --output path/to/save
+```
+example
+```
 python train_net.py --config_file ./configs/paris/fdm_tuning.yaml --output ./output/experiments/paris
 ```
 
@@ -144,6 +148,7 @@ config_root
 Please ensure the data path is correct in dataloader.yaml
 ```
 # example
+
 dataloader:
   data_root: ./data
   ...
@@ -173,9 +178,10 @@ You can set save path at task_config.yaml
 
 Run command to inference
 ```
-# python inference.py --config path/to/config/root --task task/name
-
-# example
+python inference.py --config path/to/config/root --task task/name
+```
+example
+```
 python inference.py --config ./configs/paris --task inpainting
 ```
 
