@@ -1,0 +1,6 @@
+save_path: ./results/naturalscene
+sample_num: 1
+generate_with_token: False
+generate_config:
+  filter_ratio: 50
+  num_token_per_iter: 1

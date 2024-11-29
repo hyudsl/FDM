@@ -1,0 +1,12 @@
+albumentations
+scikit_image
+opencv_python
+opencv-python-headless
+tqdm
+numpy
+matplotlib
+Pillow
+PyYAML
+# scikit-learn
+tensorboard
+mlconfig
