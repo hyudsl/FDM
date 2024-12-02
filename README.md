@@ -17,11 +17,14 @@ pip install -r requirements.txt
 
 ## Prepare dataset
 Please refer to each link to download the dataset.
-* [Places](http://places2.csail.mit.edu/download.html) \
+* [Places](http://places2.csail.mit.edu) \
 We use subset of Places365-Challenge following [PUT](https://github.com/liuqk3/PUT). \
 The list of used images is provided in [data/image_list/naturalscene/image_list.txt](https://github.com/hyudsl/FDM/blob/main/data/image_list/naturalscene/image_list.txt)
 
 * [Paris Street View](https://github.com/pathak22/context-encoder)
+
+* [Irregular mask dataset](https://nv-adlr.github.io/publication/partialconv-inpainting) \
+We use the testing_mask_dataset, which can be downloaded [here](https://www.dropbox.com/s/01dfayns9s0kevy/test_mask.zip?dl=0)
 
 ## Training
 
@@ -161,9 +164,21 @@ dataloader:
     ...
 ```
 
-Set encoder-decoder (+FDM) and feature sampler path in model.yaml
+Set encoder-decoder (+FDM) and feature sampler path in model.yaml \
+You can download the pre-trained models from [GoogleDrive](https://drive.google.com/drive/folders/127VxM-oSM9zjlRNZNrSgeDUC86inBYkj?usp=sharing).
+
 ```
 # example
+
+model:
+  ...
+  params:
+    ...
+    codec_path: ./paris/fdm_tuning.pth
+    generator_path: ./paris/generator.pth
+    ...
+
+or
 
 model:
   ...
