@@ -1,5 +1,5 @@
 # FDM: Improving Detail in Pluralistic Image Inpainting with Feature Dequantization
-This repository is the official implementation of WACV2025 paper [Improving Detail in Pluralistic Image Inpainting with Feature Dequantization]().
+This repository is the official implementation of WACV2025 paper [Improving Detail in Pluralistic Image Inpainting with Feature Dequantization](https://arxiv.org/abs/2412.01046).
 
 ## Environment setup
 ```
@@ -205,5 +205,13 @@ This repository is built on the [PUT](https://github.com/liuqk3/PUT)
 
 ## Citation
 ```
-
+@misc{park2024improvingpluralisticimageinpainting,
+      title={Improving Detail in Pluralistic Image Inpainting with Feature Dequantization}, 
+      author={Kyungri Park and Woohwan Jung},
+      year={2024},
+      eprint={2412.01046},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.01046}, 
+}
 ```
