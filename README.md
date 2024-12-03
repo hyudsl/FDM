@@ -1,6 +1,8 @@
 # FDM: Improving Detail in Pluralistic Image Inpainting with Feature Dequantization
 This repository is the official implementation of WACV2025 paper [Improving Detail in Pluralistic Image Inpainting with Feature Dequantization](https://arxiv.org/abs/2412.01046).
 
+<img src="readme_source/Overview.png"/>
+
 ## Environment setup
 ```
 git clone https://github.com/hyudsl/FDM.git
