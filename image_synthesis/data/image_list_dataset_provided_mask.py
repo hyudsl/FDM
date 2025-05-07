@@ -22,7 +22,6 @@ MASK_RATIO_INDEX = {
     '0.6': 12000
 }
 
-
 class ImageListDataset(Dataset):
     """
     This class can be used to load images when given a file contain the list of image paths

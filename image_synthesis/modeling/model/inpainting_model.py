@@ -221,10 +221,6 @@ class InpaintingModel(nn.Module):
         org_quant_feature = org_data['feature_quantize']
         generated_feature = org_quant_feature
 
-        org_data = self.content_codec.get_features(image,
-                                            return_quantize_feature=True) # B x C x H x W
-        org_quant_feature = org_data['feature_quantize']
-
         input_data = self.content_codec.get_features(image, 
                                             mask=mask, 
                                             return_quantize_feature=False,
