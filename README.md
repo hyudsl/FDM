@@ -207,13 +207,12 @@ This repository is built on the [PUT](https://github.com/liuqk3/PUT)
 
 ## Citation
 ```
-@misc{park2024improvingpluralisticimageinpainting,
-      title={Improving Detail in Pluralistic Image Inpainting with Feature Dequantization}, 
-      author={Kyungri Park and Woohwan Jung},
-      year={2024},
-      eprint={2412.01046},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.01046}, 
+@InProceedings{Park_2025_WACV,
+    author    = {Park, Kyungri and Jung, Woohwan},
+    title     = {Improving Detail in Pluralistic Image Inpainting with Feature Dequantization},
+    booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {February},
+    year      = {2025},
+    pages     = {680-689}
 }
 ```
