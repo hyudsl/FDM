@@ -1,7 +1,0 @@
-save_path: ./output/inference/paris/token_test
-sample_num: 1
-generate_with_token: True
-token_root: ./output/inference/paris/token
-generate_config:
-  filter_ratio: 50
-  num_token_per_iter: 1

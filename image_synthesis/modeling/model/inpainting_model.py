@@ -216,17 +216,13 @@ class InpaintingModel(nn.Module):
         image = batch['image'].cuda()
         mask = batch['mask'].cuda()
 
-        org_data = self.content_codec.get_features(image,
-                                            return_quantize_feature=True) # B x C x H x W
-        org_quant_feature = org_data['feature_quantize']
-        generated_feature = org_quant_feature
-
         input_data = self.content_codec.get_features(image, 
                                             mask=mask, 
                                             return_quantize_feature=False,
                                             return_token=True) # B x C x H x W
         input_feature = input_data['feature']
         input_token = input_data['token']
+        generated_feature = input_feature
 
         b, _, h, w = input_feature.shape
         token_type = get_token_type(mask, type='pixel_shuffle', token_shape=[h,w])

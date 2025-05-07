@@ -2,8 +2,8 @@ model:
   target: image_synthesis.modeling.model.inpainting_model.InpaintingModel
   params:
     mode: 'inpainitng'
-    codec_path: ./output/experiments/paris/fdm_tuning.pth
-    generator_path: ./output/experiments/paris/generator.pth
+    codec_path: ./output/experiments/paris/fdm_tuning/checkpoint/last.pth
+    generator_path: ./output/experiments/paris/transformer/checkpoint/last.pth
     content_codec_config:
       target: image_synthesis.modeling.codecs.image_codec.patch_vqgan.PatchVQGAN
       params:

@@ -12,16 +12,6 @@ def my_print(info, logger=None):
     else:
         logger.log_info(info)
 
-MASK_RATIO_INDEX = {
-    '0.01': 0,
-    '0.1': 2000,
-    '0.2': 4000,
-    '0.3': 6000,
-    '0.4': 8000,
-    '0.5': 10000,
-    '0.6': 12000
-}
-
 
 class ImageListDataset(Dataset):
     """
