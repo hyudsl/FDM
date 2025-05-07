@@ -2,8 +2,8 @@ model:
   target: image_synthesis.modeling.model.inpainting_model.InpaintingModel
   params:
     mode: 'inpainitng'
-    codec_path: ./output/experiments/paris/fdm_tuning.pth
-    generator_path: ./output/experiments/paris/generator.pth
+    codec_path: ./output/experiments/paris/encoder_decoder/checkpoint/last.pth
+    generator_path: ./output/experiments/paris/transformer/checkpoint/last.pth
     content_codec_config:
       target: image_synthesis.modeling.codecs.image_codec.patch_vqgan.PatchVQGAN
       params:
@@ -30,10 +30,6 @@ model:
             in_ch: 256
             out_ch: 3
             res_ch: 256
-    fdm_config:
-      target: image_synthesis.modeling.modules.FDM.fdm.FDM
-      params:
-        e_dim: 256
     generator_config:
       target: image_synthesis.modeling.vector_predictor.transformer.MaskedImageInpaintingTransformer
       params:

@@ -1,0 +1,23 @@
+dataloader:
+  data_root: ./data
+  batch_size: 1
+  num_workers: 0
+  validation_datasets:
+    - target: image_synthesis.data.image_list_dataset_provided_mask.ImageListDataset
+      params:
+        name: images/paris/val
+        image_list_file: ./data/image_list/paris/image_list.txt
+        image_end_with: bmp,jpg,jpeg,pgm,png,ppm,tif,tiff,webp,JPEG
+
+        return_data_keys: [image, mask, path]
+
+        provided_mask_name: masks
+        provided_mask_list_file: ./data/image_list/paris/mask_list05_06.txt
+
+        image_mask_paired: True
+        
+        im_preprocessor_config:
+          target: image_synthesis.data.utils.image_preprocessor.SimplePreprocessor
+          params:
+            size: [256, 256]
+            smallest_max_size: 256
